@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>ToDolist</title>
+</head>
+<body>
+    <div class="top-bar">
+        <button class="toggle-sidebar-btn">&#10005; 닫기</button>
+    </div>
+    <div class="inner_body">
+        <aside class="side_bar js-side_bar2" style="left: 0px;">
+            <div class="logo">
+                <img src="https://pds.saramin.co.kr/company/logo/202203/10/r8irhx_27rz-iuruh_logo.png" alt="Sparta Logo">
+            </div>
+            <ul class="navction">
+                <li><a href="#home" class="nav-link">🏠 | 홈</a></li>
+                <li><a href="#management" class="nav-link">🧺 | 관리함</a></li>
+                <li><a href="#today" class="nav-link">☀️ | 오늘</a></li>
+                <li><a href="#calendar" class="nav-link">📅 | 달력</a></li>
+            </ul>
+            <ul>
+                <li><a href="#project" class="nav-link">프로젝트</a></li>
+            </ul>
+        </aside>
+        <div class="main_content">
+            <div id="home" class="content-section active">
+                <div class="center-content">
+                    <h2>홈</h2>
+                    <p>홈 내용</p>
+                </div>
+            </div>
+            <div id="management" class="content-section">
+                <div class="center-content">
+                    <h2>관리함</h2>
+                    <p>관리함 내용</p>
+                </div>
+            </div>
+            <div id="today" class="content-section">
+                <div class="center-content">
+                    <div class="center-content">
+                        <h2>오늘</h2>
+                        <div class="todo-container">
+                            <div class="todo-header">
+                                <input type="text" id="todo-input" placeholder="할 일을 입력하세요">
+                                <input type="date" id="todo-date">
+                                <button id="add-todo">추가</button>
+                            </div>
+                            <ul id="todo-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="calendar" class="content-section">
+                <div class="center-content">
+                    <h2>달력</h2>
+                    <p>달력 내용</p>
+                </div>
+            </div>
+            <div id="project" class="content-section">
+                <div class="center-content">
+                    <h2>프로젝트</h2>
+                    <p>프로젝트 내용</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./SideBar.js"></script>
+    <script src="./ToDoList.js"></script>
+</body>
+</html>
